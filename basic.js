@@ -1,3 +1,5 @@
+window.streamerbot = window.streamerbot || {};
+window.streamerbot.widgets = window.streamerbot.widgets || {};
 window.streamerbot.widgets.gsapAnimations = window.streamerbot.widgets.gsapAnimations || {};
 window.streamerbot.widgets.gsapAnimations.basic = {
     // Attention Seekers
