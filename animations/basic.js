@@ -130,4 +130,12 @@ window.streamerbot.widgets.gsapAnimations.basic = {
     slideOutLeft: (el, duration = 1, x = -200) => gsap.to(el, { x, opacity: 0, duration }),
     slideOutRight: (el, duration = 1, x = 200) => gsap.to(el, { x, opacity: 0, duration }),
     slideOutUp: (el, duration = 1, y = -200) => gsap.to(el, { y, opacity: 0, duration }),
+
+    // Width/Height Entrances
+    expandWidth: (el, duration = 1) => gsap.fromTo(el, { width: 0, opacity: 0 }, { width: "auto", opacity: 1, duration }),
+    expandHeight: (el, duration = 1) => gsap.fromTo(el, { height: 0, opacity: 0 }, { height: "auto", opacity: 1, duration }),
+
+    // Width/Height Exits
+    collapseWidth: (el, duration = 1) => gsap.to(el, { width: 0, opacity: 0, duration }),
+    collapseHeight: (el, duration = 1) => gsap.to(el, { height: 0, opacity: 0, duration }),
 };
